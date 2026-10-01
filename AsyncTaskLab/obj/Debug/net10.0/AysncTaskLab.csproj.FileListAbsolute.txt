@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\bin\Debug\net10.0\AysncTaskLab.exe
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\bin\Debug\net10.0\AysncTaskLab.deps.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\bin\Debug\net10.0\AysncTaskLab.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\bin\Debug\net10.0\AysncTaskLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\bin\Debug\net10.0\AysncTaskLab.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\obj\Debug\net10.0\AysncTaskLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\obj\Debug\net10.0\AysncTaskLab.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\obj\Debug\net10.0\AysncTaskLab.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\obj\Debug\net10.0\AysncTaskLab.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\obj\Debug\net10.0\AysncTaskLab.sourcelink.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\obj\Debug\net10.0\AysncTaskLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\obj\Debug\net10.0\refint\AysncTaskLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\obj\Debug\net10.0\AysncTaskLab.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\obj\Debug\net10.0\AysncTaskLab.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\AsynctaskLab\obj\Debug\net10.0\ref\AysncTaskLab.dll

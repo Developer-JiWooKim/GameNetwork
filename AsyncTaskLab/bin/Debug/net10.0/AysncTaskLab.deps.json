@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "AysncTaskLab/1.0.0": {
+        "runtime": {
+          "AysncTaskLab.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AysncTaskLab/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
