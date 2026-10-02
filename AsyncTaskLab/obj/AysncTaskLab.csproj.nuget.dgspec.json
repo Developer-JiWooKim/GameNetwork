@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\GameNetwork\\AsynctaskLab\\AysncTaskLab.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\GameNetwork\\AsyncTaskLab\\AysncTaskLab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\GitHub\\GameNetwork\\AsynctaskLab\\AysncTaskLab.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\GameNetwork\\AsyncTaskLab\\AysncTaskLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\GameNetwork\\AsynctaskLab\\AysncTaskLab.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\GameNetwork\\AsyncTaskLab\\AysncTaskLab.csproj",
         "projectName": "AysncTaskLab",
-        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\GameNetwork\\AsynctaskLab\\AysncTaskLab.csproj",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\GameNetwork\\AsyncTaskLab\\AysncTaskLab.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\GameNetwork\\AsynctaskLab\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\GameNetwork\\AsyncTaskLab\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
