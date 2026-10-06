@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Net.Sockets;
 
 namespace TcpClientLab
@@ -8,7 +8,9 @@ namespace TcpClientLab
         public static async Task Main(string[] args)
         {
             Console.Write("NickName: ");
-            string nickname = Console.ReadLine() ?? "Annonymous";
+
+            string? input = Console.ReadLine();
+            string nickname = string.IsNullOrWhiteSpace(input) ? "Annonymous" : input.Trim();
 
             using TcpClient client = new();
             await client.ConnectAsync(IPAddress.Loopback, 7777);
