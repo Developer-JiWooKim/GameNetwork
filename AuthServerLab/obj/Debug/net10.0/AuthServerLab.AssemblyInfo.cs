@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthServerLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e78cedbe9e7fa427fef07525260f462efb161a8f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdfbd054003e456575413c3314f893b6d7297f2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthServerLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthServerLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

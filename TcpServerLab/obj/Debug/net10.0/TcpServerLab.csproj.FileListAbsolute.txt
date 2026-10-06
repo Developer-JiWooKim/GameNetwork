@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\bin\Debug\net10.0\TcpServerLab.exe
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\bin\Debug\net10.0\TcpServerLab.deps.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\bin\Debug\net10.0\TcpServerLab.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\bin\Debug\net10.0\TcpServerLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\bin\Debug\net10.0\TcpServerLab.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\obj\Debug\net10.0\TcpServerLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\obj\Debug\net10.0\TcpServerLab.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\obj\Debug\net10.0\TcpServerLab.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\obj\Debug\net10.0\TcpServerLab.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\obj\Debug\net10.0\TcpServerLab.sourcelink.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\obj\Debug\net10.0\TcpServerLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\obj\Debug\net10.0\refint\TcpServerLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\obj\Debug\net10.0\TcpServerLab.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\obj\Debug\net10.0\TcpServerLab.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpServerLab\obj\Debug\net10.0\ref\TcpServerLab.dll

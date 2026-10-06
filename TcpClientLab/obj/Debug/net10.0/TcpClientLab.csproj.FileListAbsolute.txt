@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\bin\Debug\net10.0\TcpClientLab.exe
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\bin\Debug\net10.0\TcpClientLab.deps.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\bin\Debug\net10.0\TcpClientLab.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\bin\Debug\net10.0\TcpClientLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\bin\Debug\net10.0\TcpClientLab.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\obj\Debug\net10.0\TcpClientLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\obj\Debug\net10.0\TcpClientLab.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\obj\Debug\net10.0\TcpClientLab.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\obj\Debug\net10.0\TcpClientLab.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\obj\Debug\net10.0\TcpClientLab.sourcelink.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\obj\Debug\net10.0\TcpClientLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\obj\Debug\net10.0\refint\TcpClientLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\obj\Debug\net10.0\TcpClientLab.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\obj\Debug\net10.0\TcpClientLab.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\TcpClientLab\obj\Debug\net10.0\ref\TcpClientLab.dll
