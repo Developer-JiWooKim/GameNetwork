@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\bin\Debug\net10.0\UdpReceiverLab.exe
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\bin\Debug\net10.0\UdpReceiverLab.deps.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\bin\Debug\net10.0\UdpReceiverLab.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\bin\Debug\net10.0\UdpReceiverLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\bin\Debug\net10.0\UdpReceiverLab.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\obj\Debug\net10.0\UdpReceiverLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\obj\Debug\net10.0\UdpReceiverLab.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\obj\Debug\net10.0\UdpReceiverLab.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\obj\Debug\net10.0\UdpReceiverLab.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\obj\Debug\net10.0\UdpReceiverLab.sourcelink.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\obj\Debug\net10.0\UdpReceiverLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\obj\Debug\net10.0\refint\UdpReceiverLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\obj\Debug\net10.0\UdpReceiverLab.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\obj\Debug\net10.0\UdpReceiverLab.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpReceiverLab\obj\Debug\net10.0\ref\UdpReceiverLab.dll

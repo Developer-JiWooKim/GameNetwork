@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\bin\Debug\net10.0\UdpSenderLab.exe
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\bin\Debug\net10.0\UdpSenderLab.deps.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\bin\Debug\net10.0\UdpSenderLab.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\bin\Debug\net10.0\UdpSenderLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\bin\Debug\net10.0\UdpSenderLab.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\obj\Debug\net10.0\UdpSenderLab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\obj\Debug\net10.0\UdpSenderLab.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\obj\Debug\net10.0\UdpSenderLab.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\obj\Debug\net10.0\UdpSenderLab.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\obj\Debug\net10.0\UdpSenderLab.sourcelink.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\obj\Debug\net10.0\UdpSenderLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\obj\Debug\net10.0\refint\UdpSenderLab.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\obj\Debug\net10.0\UdpSenderLab.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\obj\Debug\net10.0\UdpSenderLab.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\UdpSenderLab\obj\Debug\net10.0\ref\UdpSenderLab.dll
