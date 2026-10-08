@@ -76,7 +76,28 @@ namespace TcpClientLab
                         Console.WriteLine("Disconnected from server.");
                         break;
                     }
-                    Console.WriteLine(message);
+
+                    string[] splitmessage = message.Split('|');
+                    if (splitmessage.Length < 2)
+                    {
+                        continue;
+                    }
+                    switch (splitmessage[0])
+                    {
+                        case "CHAT":
+                            Console.WriteLine(message);
+                            break;
+                        case "MOVE_RESULT":
+                            Console.WriteLine($"[MOVE_RESULT] ({splitmessage[1]}, {splitmessage[2]})");
+                            break;
+                        case "SYSTEM":
+                            Console.WriteLine($"[SYSTEM] {splitmessage[1]}");
+                            break;
+                        case "ERROR":
+                            Console.WriteLine($"[ERROR] {string.Join(" - ", splitmessage[1..])}");
+                            break;
+                    }
+
                 }
             }
             catch (OperationCanceledException)

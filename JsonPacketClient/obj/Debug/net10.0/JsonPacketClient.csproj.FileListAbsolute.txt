@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\bin\Debug\net10.0\JsonPacketClient.exe
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\bin\Debug\net10.0\JsonPacketClient.deps.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\bin\Debug\net10.0\JsonPacketClient.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\bin\Debug\net10.0\JsonPacketClient.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\bin\Debug\net10.0\JsonPacketClient.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\obj\Debug\net10.0\JsonPacketClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\obj\Debug\net10.0\JsonPacketClient.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\obj\Debug\net10.0\JsonPacketClient.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\obj\Debug\net10.0\JsonPacketClient.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\obj\Debug\net10.0\JsonPacketClient.sourcelink.json
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\obj\Debug\net10.0\JsonPacketClient.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\obj\Debug\net10.0\refint\JsonPacketClient.dll
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\obj\Debug\net10.0\JsonPacketClient.pdb
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\obj\Debug\net10.0\JsonPacketClient.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\GameNetwork\JsonPacketClient\obj\Debug\net10.0\ref\JsonPacketClient.dll

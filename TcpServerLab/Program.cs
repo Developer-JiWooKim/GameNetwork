@@ -76,7 +76,7 @@ namespace TcpServerLab
                 using StreamReader reader = new(stream);
                 using StreamWriter writer = new(stream) { AutoFlush = true };
 
-                TcpSession session = null;
+                TcpSession? session = null;
                 Task sendTask = Task.CompletedTask;
 
                 try
@@ -94,7 +94,8 @@ namespace TcpServerLab
                         Clients.Add(session);
                     }
 
-                    BroadcastMessage($"{nickname} has joined the chat.");
+                    Console.WriteLine($"{nickname} has joined the chat.");
+                    BroadcastMessage($"SYSTEM|{nickname} has joined the chat.");
 
                     while (true)
                     {
@@ -106,13 +107,46 @@ namespace TcpServerLab
 
                         if (!string.IsNullOrWhiteSpace(message))
                         {
-                            BroadcastMessage($"[{nickname}]: {message}", session);
+                            string[] splitmessage = message.Split('|');
+                            if (splitmessage.Length < 2)
+                            {
+                                session.TrySend("ERROR|INVALID_FORMAT|expected TYPE|DATA");
+                                continue;
+                            }
+
+                            switch (splitmessage[0])
+                            {
+                                case "CHAT":
+                                    BroadcastMessage($"CHAT|[{nickname}]: {splitmessage[1]}", session);
+                                    BroadcastMessage($"SYSTEM|{nickname} sent a chat message");
+                                    break;
+                                case "MOVE":
+                                    if (splitmessage.Length != 3)
+                                    {
+                                        session.TrySend("ERROR|INVALID_MOVE|expected MOVE|x|y");
+                                    }
+                                    else if (!int.TryParse(splitmessage[1], out int x)
+                                        || !int.TryParse(splitmessage[2], out int y))
+                                    {
+                                        session.TrySend("ERROR|INVALID_MOVE|x and y must be integers");
+                                    }
+                                    else
+                                    {
+                                        session.TrySend($"MOVE_RESULT|{x}|{y}");
+                                    }
+                                    break;
+                                default:
+                                    session.TrySend($"ERROR|UNKNOWN_TYPE|{splitmessage[0]}");
+                                    break;
+                            }
+
+                            // BroadcastMessage($"[{nickname}]: {message}", session);
                         }
                     }
                 }
                 catch (OperationCanceledException)
                 {
-                    // 서버 종료 요청: 정상 흐름이므로 에러로 취급하지 않고 finally에서 정리
+
                 }
                 catch (Exception ex)
                 {
@@ -139,7 +173,7 @@ namespace TcpServerLab
 
         private static void BroadcastMessage(string message, TcpSession? except = null)
         {
-            TcpSession[] sessions = null;
+            TcpSession[]? sessions = null;
             lock (_clientLock)
             {
                 sessions = Clients.ToArray();
@@ -189,7 +223,6 @@ namespace TcpServerLab
                 return _queue.Writer.TryWrite(message);
             }
 
-            // 세션당 하나만 도는 송신 루프: 이 루프만 _writer에 쓰므로 쓰기가 자동으로 직렬화됨
             public async Task RunSendLoopAsync()
             {
                 try
