@@ -1,5 +1,4 @@
-﻿using System.IO.Pipelines;
-using System.Net;
+﻿using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
@@ -7,6 +6,8 @@ namespace UdpPeerLab
 {
     internal class Program
     {
+        private static uint _sequenceId = 0;
+        private static uint _lastReceivedSequenceId = 0;
         private static async Task Main(string[] args)
         {
             if (args.Length < 3)
@@ -53,9 +54,21 @@ namespace UdpPeerLab
 
                     if (!string.IsNullOrWhiteSpace(input))
                     {
-                        byte[] data = Encoding.UTF8.GetBytes(input);
+                        string finalMessage;
+                        string[] command = input.Split(' ', 3);
+                        if (command.Length == 3 && command[0] == "/s" && uint.TryParse(command[1], out uint forcedSequenceId))
+                        {
+                            input = command[2];
+                            finalMessage = $"{forcedSequenceId}|{input}";
+                        }
+                        else
+                        {
+                            finalMessage = $"{++_sequenceId}|{input}";
+                        }
+
+                        byte[] data = Encoding.UTF8.GetBytes(finalMessage);
                         await peer.SendAsync(data, data.Length, remoteEndPoint);
-                        Console.WriteLine($"보낸 메세지: {input}");
+                        Console.WriteLine($"보낸 메세지: {finalMessage}");
                     }
                 }
             }
@@ -79,7 +92,20 @@ namespace UdpPeerLab
                     {
                         UdpReceiveResult result = await peer.ReceiveAsync(cts.Token);
                         string receiveMessage = Encoding.UTF8.GetString(result.Buffer);
-                        Console.WriteLine($"받은 메세지: {receiveMessage}");
+                        string[] parts = receiveMessage.Split('|');
+                        if (parts.Length != 2 || !uint.TryParse(parts[0], out uint sequenceId))
+                        {
+                            throw new Exception("잘못된 메세지");
+                        }
+
+                        if (_lastReceivedSequenceId >= sequenceId)
+                        {
+                            Console.WriteLine($"중복된 메세지 수신: {receiveMessage}");
+                        }
+
+                        _lastReceivedSequenceId = sequenceId;
+
+                        Console.WriteLine($"받은 메세지: {parts[0]}|{parts[1]}");
                     }
                     catch (SocketException exception) when (exception.SocketErrorCode == SocketError.ConnectionReset)
                     {
