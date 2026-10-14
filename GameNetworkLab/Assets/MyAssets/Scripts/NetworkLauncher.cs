@@ -1,16 +1,38 @@
+using System;
+using TMPro;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.MyAssets.Scripts
 {
-    public class NetworkLauncher : MonoBehaviour
+    public sealed class NetworkLauncher : MonoBehaviour
     {
+        public static NetworkLauncher Instance { get; private set; }
+
+        [SerializeField] private TextMeshProUGUI _scoreText;
+        [SerializeField] private Button _scoreButton;
+
+        public event Action ScoreButtonClicked;
+
+        void Awake()
+        {
+            Instance = this;
+            _scoreButton.onClick.AddListener(ScoreButtonClickedHandler);
+        }
+
+        private void ScoreButtonClickedHandler()
+        {
+            ScoreButtonClicked?.Invoke();
+        }
+
         public void StartHost()
         {
             if (NetworkManager.Singleton.IsListening)
             {
                 return;
             }
+
             NetworkManager.Singleton.StartHost();
         }
 
@@ -20,7 +42,13 @@ namespace Assets.MyAssets.Scripts
             {
                 return;
             }
+
             NetworkManager.Singleton.StartClient();
+        }
+
+        public void SetText(string text)
+        {
+            _scoreText.text = text;
         }
     }
 }

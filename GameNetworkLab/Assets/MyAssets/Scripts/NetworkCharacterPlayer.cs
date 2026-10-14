@@ -1,17 +1,19 @@
 using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.InputSystem;
+using TMPro;
 
 namespace Assets.MyAssets.Scripts
 {
     [RequireComponent(typeof(CharacterController))]
-    public class NetworkCharacterPlayer : NetworkBehaviour
+    public sealed class NetworkCharacterPlayer : NetworkBehaviour
     {
         private static readonly int BaseColorId = Shader.PropertyToID("_BaseColor");
 
         [SerializeField] private InputActionReference _moveActionAsset;
         [SerializeField] private float _moveSpeed = 4f;
         [SerializeField] private Renderer _renderer;
+        [SerializeField] private TextMeshProUGUI _nameText;
 
         private MaterialPropertyBlock _mpb;
         private CharacterController _cc;
@@ -24,18 +26,19 @@ namespace Assets.MyAssets.Scripts
             _cc.enabled = false;
 
             _moveInput = _moveActionAsset.action;
-
         }
 
         public override void OnNetworkSpawn()
         {
-            float hue = (OwnerClientId * 0.618034f) % 1f;
+            float hue = OwnerClientId * 0.618034f % 1f;
             Color color = Color.HSVToRGB(hue, 0.8f, 0.9f);
 
             _mpb ??= new MaterialPropertyBlock();
             _renderer.GetPropertyBlock(_mpb);
             _mpb.SetColor(BaseColorId, color);
             _renderer.SetPropertyBlock(_mpb);
+
+            _nameText.text = IsOwnedByServer ? $"Host (ID: {OwnerClientId})" : $"Client (ID: {OwnerClientId})";
 
             if (!IsOwner)
             {
