@@ -10,6 +10,7 @@ namespace Assets.MyAssets.Scripts
         {
             _cam = Camera.main;
         }
+
         private void LateUpdate()
         {
             if (_cam == null)

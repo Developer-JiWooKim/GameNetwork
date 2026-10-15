@@ -80,4 +80,3 @@ namespace Assets.MyAssets.Scripts
         }
     }
 }
-

@@ -19,7 +19,6 @@ namespace Assets.MyAssets.Scripts
         private CharacterController _cc;
         private InputAction _moveInput;
 
-
         private void Awake()
         {
             _cc = GetComponent<CharacterController>();
@@ -30,6 +29,7 @@ namespace Assets.MyAssets.Scripts
 
         public override void OnNetworkSpawn()
         {
+            // 생성 시 Body Renderer의 Material 색깔을 변경
             float hue = OwnerClientId * 0.618034f % 1f;
             Color color = Color.HSVToRGB(hue, 0.8f, 0.9f);
 
@@ -40,6 +40,8 @@ namespace Assets.MyAssets.Scripts
 
             _nameText.text = IsOwnedByServer ? $"Host (ID: {OwnerClientId})" : $"Client (ID: {OwnerClientId})";
 
+            _cc.enabled = true;
+
             if (!IsOwner)
             {
                 return;
@@ -47,31 +49,39 @@ namespace Assets.MyAssets.Scripts
 
             transform.position = new Vector3(NetworkManager.Singleton.IsHost ? -2f : 2f, 0f, 0f);
 
-            _cc.enabled = true;
             _moveInput.Enable();
         }
 
         public override void OnNetworkDespawn()
         {
+            _cc.enabled = false;
+
             if (!IsOwner)
             {
                 return;
             }
 
-            _cc.enabled = false;
             _moveInput.Disable();
         }
 
         void Update()
         {
-            if (!IsOwner || !IsSpawned)
+            if (!IsOwner || !IsSpawned || _moveInput is null)
             {
                 return;
             }
 
             Vector2 input = _moveInput.ReadValue<Vector2>();
             Vector3 dir = new Vector3(input.x, 0f, input.y);
-            _cc.Move(dir * _moveSpeed * Time.deltaTime);
+            // _cc.Move(dir * _moveSpeed * Time.deltaTime);
+
+            MoveRequestRPC(dir * _moveSpeed * Time.deltaTime);
+        }
+
+        [Rpc(SendTo.Server)]
+        private void MoveRequestRPC(Vector3 moveDelta)
+        {
+            _cc.Move(moveDelta);
         }
     }
 }
