@@ -72,10 +72,13 @@ namespace Assets.MyAssets.Scripts
             }
 
             Vector2 input = _moveInput.ReadValue<Vector2>();
-            Vector3 dir = new Vector3(input.x, 0f, input.y);
-            // _cc.Move(dir * _moveSpeed * Time.deltaTime);
+            if (input.sqrMagnitude > 0.001f)
+            {
+                Vector3 dir = new Vector3(input.x, 0f, input.y);
+                MoveRequestRPC(dir * _moveSpeed * Time.deltaTime);
+            }
 
-            MoveRequestRPC(dir * _moveSpeed * Time.deltaTime);
+            // _cc.Move(dir * _moveSpeed * Time.deltaTime);
         }
 
         [Rpc(SendTo.Server)]
